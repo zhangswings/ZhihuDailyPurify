@@ -8,7 +8,8 @@ public final class Check {
     private Check() {
 
     }
-
+    //检测是否安装知乎客户端
+    //根据包名"com.zhihu.android"判断
     public static boolean isZhihuClientInstalled() {
         try {
             return preparePackageManager().getPackageInfo("com.zhihu.android", PackageManager.GET_ACTIVITIES) != null;
@@ -16,7 +17,7 @@ public final class Check {
             return false;
         }
     }
-
+    //
     public static boolean isIntentSafe(Intent intent) {
         return preparePackageManager().queryIntentActivities(intent, 0).size() > 0;
     }

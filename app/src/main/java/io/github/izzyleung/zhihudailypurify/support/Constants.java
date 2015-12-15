@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
 
+import io.github.izzyleung.zhihudailypurify.bean.DailyImage;
 import io.github.izzyleung.zhihudailypurify.bean.DailyNews;
 
 public final class Constants {
@@ -32,6 +33,9 @@ public final class Constants {
         }.getType();
 
         public static final java.lang.reflect.Type newsListType = new TypeToken<List<DailyNews>>() {
+
+        }.getType();
+        public static final java.lang.reflect.Type imgsListType = new TypeToken<List<DailyImage>>() {
 
         }.getType();
     }

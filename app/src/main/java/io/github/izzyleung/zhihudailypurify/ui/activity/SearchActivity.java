@@ -71,8 +71,9 @@ public class SearchActivity extends BaseActivity {
         //noinspection ConstantConditions
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
+//搜索后台任务
     class SearchTask extends BaseSearchTask {
+    //显示的
         private ProgressDialog dialog;
 
         @Override
