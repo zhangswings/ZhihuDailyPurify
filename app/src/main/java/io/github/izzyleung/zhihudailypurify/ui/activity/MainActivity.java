@@ -54,7 +54,7 @@ public class MainActivity extends BaseActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
+    //跳转Activity
     private boolean prepareIntent(Class clazz) {
         startActivity(new Intent(MainActivity.this, clazz));
         return true;
