@@ -67,11 +67,11 @@ public class SplashActivity extends Activity {
      */
     private void initAnim() {
         mFadeIn = AnimationUtils.loadAnimation(this, R.anim.welcome_fade_in);
-        mFadeIn.setDuration(1000);
+        mFadeIn.setDuration(300);
         mFadeInScale = AnimationUtils.loadAnimation(this, R.anim.welcome_fade_in_scale);
         mFadeInScale.setDuration(1000);
         mFadeOut = AnimationUtils.loadAnimation(this, R.anim.welcome_fade_out);
-        mFadeOut.setDuration(1000);
+        mFadeOut.setDuration(300);
         mImageview.startAnimation(mFadeIn);
     }
     /**
